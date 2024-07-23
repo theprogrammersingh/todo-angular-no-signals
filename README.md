@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
+<a href="https://idx.google.com/import?url=https://github.com/theprogrammersingh/todo-angular-no-signals">
+  <img
+    height="32"
+    alt="Open in IDX"
+    src="https://cdn.idx.dev/btn/open_dark_32.svg">
+</a>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
