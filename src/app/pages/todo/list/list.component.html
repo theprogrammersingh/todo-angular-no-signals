@@ -1,0 +1,8 @@
+<div class="w-50 m-auto">
+  <div class="d-flex justify-content-end mt-3"><a class="btn btn-success" routerLink="/add">Add Task</a></div>
+
+  @for (task of tasks; track $index) {
+    <app-list-item [task]="task" (taskDeleter)="deleteTask($event)" (taskCompleter)="completeTaskHandler($event)"></app-list-item>
+  }
+</div>
+

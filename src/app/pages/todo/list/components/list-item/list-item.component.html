@@ -1,0 +1,29 @@
+<div class="task-item align-items-center border border-1 border-dark d-flex justify-content-between px-3 py-1 mt-1 rounded-3">
+  <div class="d-flex">
+    @if (task && !!task.isComplete) {
+    <app-checkbox
+      [isComplete]="task.isComplete"
+      (isCompleteChange)="completeTaskHandler()"
+      class="me-2"
+    ></app-checkbox>
+    <p class="m-0">
+      <s>{{ task.title }}</s>
+    </p>
+    } @if (task && !task.isComplete) {
+    <app-checkbox
+      [isComplete]="task.isComplete"
+      (isCompleteChange)="completeTaskHandler()"
+      class="me-2"
+    ></app-checkbox>
+    <p class="m-0">{{ task.title }}</p>
+    }
+  </div>
+  <button class="btn btn-primary" (click)="readMore()">
+    <span class="material-symbols-outlined">
+      read_more
+      </span>
+  </button>
+  <button class="btn btn-danger" (click)="deleteTask()">
+    <span class="material-symbols-outlined"> delete </span>
+  </button>
+</div>

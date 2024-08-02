@@ -1,0 +1,15 @@
+.btn {
+  padding: 1px 6px;
+
+  .material-symbols-outlined {
+    font-size: 18px;
+    line-height: unset;
+  }
+}
+
+.task-item {
+  &:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+}
